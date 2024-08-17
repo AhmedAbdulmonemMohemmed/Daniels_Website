@@ -1,0 +1,526 @@
+/* GLOBAL STYLE */
+:root {
+    --main-color: #343434;
+    --secondry-color: #748182;
+    --background-color: #F4F4F4;
+    --font-size: 50px
+}
+
+
+
+.navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+/* GLOBAL STYLE */
+
+/* NAV SECTION */
+#navbar {
+    background-color: black;
+    transition: 0.5s all ease-out;
+}
+
+/* NAV SECTION */
+
+
+
+/* HOME SECTION */
+
+#home {
+    background-image: url(./../imgs/bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#home h5 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+#home h1 {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#home .icon {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#home .layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+
+@media screen and (min-width:300px) and (max-width:640px) {
+    #home {
+        h5 {
+            font-size: 2.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+/* HOME SECTION */
+
+
+/* ABOUT SECTION */
+
+#about .about-img {
+    position: relative;
+    padding: 0 0 0 30px;
+}
+
+#about .about-img::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+#about .about-me h3 {
+    font-weight: 900;
+    color: var(--main-color);
+}
+
+#about .about-me span {
+    color: var(--secondry-color);
+}
+
+#about .about-me p {
+    color: var(--secondry-color);
+}
+
+#about .about-me p>span {
+    font-weight: bold;
+    color: #748182;
+}
+
+#about .skills span {
+    color: gainsboro
+}
+
+#about .progress-bar {
+    background-color: #1C1C1C;
+}
+
+#about .bg-btn {
+    background-color: #1C1C1C;
+    color: white;
+    transition: 0.5s;
+}
+
+.bg-btn:hover {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+.contact-btn:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+.contact-btn {
+    transition: 0.5s;
+}
+
+
+@media screen and (min-width:992px)and (max-width:1199px) {
+    #about .info_pic {
+        width: 50%;
+    }
+
+    #about .info {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+
+    #about .col-lg-5 {
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+/* ABOUT SECTION */
+
+/* SERVICES SECTION */
+#services {
+    background-color: var(--background-color);
+    padding: 100px 0;
+
+}
+
+#services h3 {
+    font-size: var(--font-size);
+    font-weight: 800;
+}
+
+/* .main-title::after {
+    content: "";
+    width: 240px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    left: 43%;
+    bottom: -10px;
+    z-index: -1;
+
+} */
+
+.main-title {
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+#services .icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-color: var(--background-color);
+    transition: 0.5s;
+}
+
+.icon:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+
+@media screen and (max-width:993px) {
+    #services h3 {
+        margin-bottom: 1.5rem;
+        font-size: 32px;
+    }
+}
+
+/* PORTFOLIO SECTION */
+#portfolio .nav .nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.nav-pills .nav-link.active {
+    background-color: black;
+    color: white !important;
+}
+
+#portfolio h3 {
+    font-size: var(--font-size);
+    font-weight: 800;
+}
+
+#portfolio .over-layer {
+    width: 97.5%;
+    opacity: 0;
+    transition: 0.5s;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+
+}
+
+#portfolio .over-layer:hover {
+    opacity: 1;
+}
+
+#portfolio .layer-ico {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.layer-ico:hover {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+@media screen and (max-width:993px) {
+    #portfolio h3 {
+        margin-bottom: 1.5rem;
+        font-size: 32px;
+    }
+
+}
+
+/* PORTFOLIO SECTION */
+
+/* CLIENTS SECTION */
+
+#clients {
+    background-color: var(--background-color);
+    padding: 50px;
+}
+
+#clients h3 {
+    font-size: var(--font-size);
+    font-weight: 800;
+}
+
+#clients .img-slider {
+    width: 30%;
+}
+
+#clients .slider-info {
+    color: #888888;
+}
+
+#clients span {
+    color: #888888;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#clients h6 {
+    font-family: 'Alegreya', serif;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: RGB(134, 151, 145);
+}
+
+.numbers .item h3 {
+    font-weight: 800;
+}
+
+.numbers .item p {
+    color: var(--secondry-color);
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:993px) {
+    #clients .img-slider {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    #clients h3 {
+        margin-bottom: 1.5rem;
+        font-size: 32px;
+    }
+
+}
+
+
+/* CLIENTS SECTION */
+
+/* TEAM SECTION */
+
+#team {
+    background-color: var(--background-color);
+    padding: 50px;
+}
+
+#team h3 {
+    font-size: var(--font-size);
+    font-weight: 800;
+}
+
+#team .card-body {
+    background-color: #1C1C1C;
+    color: white;
+}
+
+#team .card-body h5 {
+    font-weight: bold;
+}
+
+#team .card-layer .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+
+/* #team .card {
+    position: relative;
+} */
+
+#team .card-layer {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 0px;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: all.5s;
+}
+
+#team .card:hover .card-layer {
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+
+#team .card:hover .soical-icons {
+    transform: rotateY(180deg);
+}
+
+
+#team .card:hover .card-img img {
+    transform: scale(1.2);
+}
+
+.card-img img {
+    transition: 0.5s;
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.icon {
+    transition: 0.4s;
+}
+
+#team .card-layer .icon  {
+    background-color: white ;
+    color: black;
+}
+
+.card-body h4,h5 {
+    font-family: 'Alegreya', serif;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+@media screen and (max-width:992px) {
+    #team h3 {
+        font-size: 32px;
+    }
+}
+
+
+/* TEAM SECTION */
+
+
+/* CONTACT SECTION */
+#contact h3 {
+    font-size: var(--font-size);
+    font-weight: 800;
+}
+
+#contact .icon {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    transition: 0.5s;
+}
+
+.icon:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+#contact .card-info h6 {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+#contact .card-info p {
+    color: var(--secondry-color);
+}
+
+#contact .form-control {
+    background: var(--background-color) !important;
+    border: none;
+    box-shadow: none;
+}
+
+#contact .form-btn {
+    border: 1px solid black;
+    color: white;
+    background-color: #1C1C1C;
+    transition: 0.4s;
+}
+
+textarea{
+    resize: none;
+}
+.form-btn:hover {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+@media screen and (max-width:992px) {
+    #contact h3 {
+        font-size: 32px;
+    }
+}
+/* CONTACT SECTION */
+
+/* FOOTER SECTION */
+footer {
+    background-color: #1C1C1C;
+    padding: 30px;
+
+}
+
+footer p span{
+    color: white;
+}
+
+footer p {
+    color: var(--secondry-color);
+    
+}
+
+@media screen and (max-width:586px) {
+    footer p{
+        font-size: 0.8rem;
+    }
+}
+
+/* FOOTER SECTION */
